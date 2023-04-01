@@ -2,6 +2,7 @@
 
 This is a starter project for building modern web applications using Tailwind CSS, PostCSS, and Webpack. Tailwind CSS is a highly customizable CSS framework that makes it easy to build complex user interfaces. PostCSS is a tool for transforming CSS with JavaScript plugins, and Webpack is a popular module bundler for JavaScript applications.
 
+![Screenshot of My Application](images/starter-screenshot.png)
 ## Why a starter project?
 
 A starter project is a great way to jumpstart your development process and get up and running quickly with modern web technologies. This starter project includes all the necessary configuration files and dependencies to start building web applications with Tailwind CSS, PostCSS, and Webpack. You can use this starter project as a starting point for your own web projects, or as a learning resource to understand how to set up and configure these technologies.
