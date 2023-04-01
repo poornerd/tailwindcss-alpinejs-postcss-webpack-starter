@@ -16,30 +16,27 @@ Tailwind CSS is a highly customizable CSS framework that allows you to easily bu
 To use this starter project, you'll need to have Node.js and npm installed on your machine. Once you've installed Node.js and npm, you can follow these steps:
 
 1. Clone the repository to your local machine:
-```
-git clone https://github.com/poornerd/tailwindcss-postcss-webpack-starter.git
-```
-
+    ```
+    git clone https://github.com/poornerd/tailwindcss-postcss-webpack-starter.git
+    ```
 1. Navigate to the project directory and install the dependencies:
-```
-cd tailwindcss-postcss-webpack-starter
-npm install
-```
-This will install all the necessary dependencies listed in the package.json file.
-
+    ```
+    cd tailwindcss-postcss-webpack-starter
+    npm install
+    ```
+    This will install all the necessary dependencies listed in the package.json file.
 1. Run the build process:
-```
-npm run build
-```
-This will run the Webpack build process and generate a bundled output file in the dist directory.
-
+    ```
+    npm run build
+    ```
+    This will run the Webpack build process and generate a bundled output file in the dist directory.
 1. Run the development server:
-```
-npm run dev
-```
-This will start a local development server that watches for changes in your code and automatically reloads the browser.
-Start building your web application!
-You can now start building your web application using Tailwind CSS, PostCSS, and Webpack. Open your browser and navigate to http://localhost:8080 to see your web application in action.
+    ```
+    npm run dev
+    ```
+    This will start a local development server that watches for changes in your code and automatically reloads the browser.
+    Start building your web application!
+    You can now start building your web application using Tailwind CSS, PostCSS, and Webpack. Open your browser and navigate to http://localhost:8080 to see your web application in action.
 
 ## License
 
