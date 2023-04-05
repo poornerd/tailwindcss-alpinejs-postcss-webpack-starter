@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -23,7 +24,23 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html'
-    })
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src', '**', '*.{jpg,png,svg,ico,webmanifest}'),
+          to({ context, absoluteFilename }) {
+            const relativePath = path.relative(path.join(context, 'src'), absoluteFilename);
+            return path.join(context, 'dist', relativePath);
+          },
+          context: __dirname,
+          globOptions: {
+            dot: false,
+            ignore: ['**/node_modules/**'],
+          },
+        },
+      ],
+    }),   
   ],
   devServer: {
     static: {
