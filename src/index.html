@@ -23,13 +23,59 @@
     </div>
   </section>
   <section class="bg-white dark:bg-gray-900">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-12">
       <h1
-        class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-        Tailwind CSS + PostCSS + webpack Starter</h1>
-      <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Start Quickly. Don't waste time starting you next Tailwind CSS + PostCSS + webpack project.</p>
+        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        Tailwind CSS + AlpineJS + PostCSS + webpack Starter</h1>
+      <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Start Quickly.
+        Don't waste time starting you next Tailwind CSS + AlpineJS + PostCSS + webpack project.</p>
+
+      <div class="w-64 py-16 mx-auto text-5xl text-red-700">
+        <div x-data="{ show: false }">
+          <button
+            class="px-6 py-2 text-2xl text-white bg-blue-500 rounded shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
+            @click="show = !show">
+            Click me
+          </button>
+          <div x-show="show" class="my-16">
+            <h1>Oh, hello!</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto mt-10">
+        <div class="flex justify-center space-x-6">
+          <a href="#"
+            class="flex items-center px-4 py-2 space-x-2 text-blue-500 rounded-md hover:text-blue-700 hover:bg-gray-200">
+            <img src="https://avatars.githubusercontent.com/u/67109815?s=200&v=4" alt="Tailwind CSS" width="40"
+              height="40">
+            &nbsp;&nbsp;
+            <span>Tailwind CSS</span>
+          </a>
+          <a href="#"
+            class="flex items-center px-4 py-2 space-x-2 text-blue-500 rounded-md hover:text-blue-700 hover:bg-gray-200">
+            <img src="https://avatars.githubusercontent.com/u/59030169?s=200&v=4" alt="Alpine.js" width="40"
+              height="40">
+            &nbsp;&nbsp;
+            <span class="inline-block">Alpine.js</span>
+          </a>
+          <a href="#"
+            class="flex items-center px-4 py-2 space-x-2 text-blue-500 rounded-md hover:text-blue-700 hover:bg-gray-200">
+            <img src="https://postcss.github.io/postcss/logo.svg" alt="PostCSS" width="40" height="40">
+            &nbsp;&nbsp;
+            <span class="inline-block">Post CSS</span>
+          </a>
+          <a href="#"
+            class="flex items-center px-4 py-2 space-x-2 text-blue-500 rounded-md hover:text-blue-700 hover:bg-gray-200">
+            <img src="https://webpack.js.org/assets/icon-square-big.svg" alt="Webpack" width="40" height="40">
+            &nbsp;&nbsp;
+            <span class="inline-block">webpack</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
+  </div>
   <script src="bundle.js"></script>
 </body>
 
